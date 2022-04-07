@@ -67,13 +67,14 @@ input.onButtonPressed(Button.B, function () {
             basic.showString("DRAW")
         }
         basic.pause(500)
+        basic.showString("" + Player_Wins + "-" + AI_Wins)
         if (Player_Wins == 3) {
-            basic.showString("VICTORY       ")
+            basic.showString("VICTORY   ")
             Player_Wins = 0
             AI_Wins = 0
         }
         if (AI_Wins == 3) {
-            basic.showString("DEFEAT          ")
+            basic.showString("DEFEAT   ")
             Player_Wins = 0
             AI_Wins = 0
         }
